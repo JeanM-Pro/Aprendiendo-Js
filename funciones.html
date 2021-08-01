@@ -8,6 +8,9 @@
 </head>
 <body>
     <script>
+        // Una funcion es un bloque de codigo, autocontenido, que se puede definir una vez y ejecutar en cualquier momento. Opcionalmente, una funcion puede aceptar parametros y devolver un valor.
+
+
         //Funcion declarada
         function holaGente(){
             console.log('uno')
@@ -15,7 +18,17 @@
             console.log('tres')
         }
 
-        holaGente();
+        // holaGente();
+
+        //funcion que retorna valores
+        function saludar(nombre, apellido, edad){
+            console.log(`hola, mi nombre es ${nombre} ${apellido} y tengo ${edad} años.`)
+        }
+
+        saludar('Jean', 'Centeno', 29);
+
+        saludar();
+
 
 
 
