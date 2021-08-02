@@ -28,9 +28,11 @@
         //Ejecutar una funcion por cada elemento dentro del arreglo
 
         const metodo = ['hola', 'como', 'estas', 'hablame'];
-        metodo.forEach(function(el, index){
-            console.log(`<li>${el} ${index}</li>`)
+        metodo.forEach(function(e, index){
+            console.log(`<li id="${index}">${e}</li>`)
         })
+
+        // ${e} hace referencia a los elementos dentro del arreglo
 
     </script>
 </body>

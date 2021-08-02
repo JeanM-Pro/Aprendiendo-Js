@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //declaracion de objetos y como acceder
+
+        //las funciones dentro de los objetos se llamaran 'metodos'
+
+        const jean = {
+            nombre: 'Jean',
+            apellido: 'Centeno',
+            edad: 29,
+            pasatiempos: ['ver anime', 'escuchar musica'],
+            soltero: false,
+            contacto: {
+                correo: 'jeancenteno54@gmail.com',
+                telefono: 31325451,
+                instagram: '@jeancenteno'
+            },
+            saludar: function(){
+                console.log('hola gente')
+            },
+
+            //para concatenar propiedades dentro de una funcion en el objeto se usa el metodo 'this'
+
+            decirMiNombre: function(){
+                console.log(`Hola mi Nombre es ${this.nombre} ${this.apellido} y tengo ${this.edad} años, mis pasatiempos son ${this.pasatiempos[0]} y ${this.pasatiempos[1]}, tambien me pueden seguir como ${this.contacto.instagram} en instagram.`)
+            }
+        }
+
+        //para acceder a las propiedades del objeto se usa el punto (.)
+        console.log(jean.nombre);
+        console.log(jean.apellido);
+        console.log('Soy soltero?:', jean.soltero)
+        console.log(jean.pasatiempos[1]);
+        console.log(jean.contacto.telefono);
+        jean.saludar();
+        jean.decirMiNombre();
+
+        // Object.keys es un metodo que permite listar todas las llaves del objeto. (propiedades)
+
+        console.log(Object.keys(jean));
+
+        //Object.values es un metodo que forma un arreglo que da los valores de las propiedades.
+
+        console.log(Object.values(jean));
+
+        // hasOwnProperty permite saber si un objeto tiene una propiedad (devuelve un valor boolean (true o false)).
+
+        //devuelve true
+        console.log(jean.hasOwnProperty('nombre'));
+
+        //devuelve false
+        console.log(jean.hasOwnProperty('sexo'));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
