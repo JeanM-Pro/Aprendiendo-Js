@@ -19,8 +19,18 @@
         colores.push('verde');
         console.log(colores);
 
+        //Eliminando elementos al final de un arreglo
 
+        const numeros = [1, 2, 3];
+        numeros.pop();
+        console.log(numeros);
 
+        //Ejecutar una funcion por cada elemento dentro del arreglo
+
+        const metodo = ['hola', 'como', 'estas', 'hablame'];
+        metodo.forEach(function(el, index){
+            console.log(`<li>${el} ${index}</li>`)
+        })
 
     </script>
 </body>
