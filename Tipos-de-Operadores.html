@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // Aritmeticos: suma(+), resta(-), multiplicacion(*), division(/), modulo(%), agrupacion (())
+
+        let a = 5 + (5 - 10) * 3;
+        console.log(a);
+
+        // El modulo nos devuelve el residiuo de una division sin llegar hasta la parte decimal.
+
+        //el modulo es cero (0)
+        let modulo1 = 6 % 2;
+        console.log(modulo1);
+
+        //el modulo es 1
+        let modulo2 = 5 % 2;
+        console.log(modulo2);
+
+
+    //Relacionales: nos permiten comparar valores. Mayor que(>), menor que(<), mayor o igual(>=), menor o igual(<=), igual(==), estrictamente igual(===), diferente de(!=), estrictamente diferente de(!==)
+
+        // true
+        console.log(8 > 5);
+
+        // false
+        console.log(5 > 8);
+
+        // true
+        console.log(5 >= 3);
+
+        //false
+        console.log(5 >= 6);
+
+        // = un 'igual' es asignacion de variable
+        // == dos iguales es comparacion de valores
+        // === tres iguales es comparacion de tipo de dato y de valor
+
+        // true
+        console.log(7 == 7);
+        
+        // true
+        console.log('7' == 7);
+
+        // true
+        console.log(0 == false);
+
+        // true
+        console.log(7 === 7);
+
+        // false
+        console.log('7' === 7);
+
+        // false
+        console.log(0 === false);
+
+
+    // Incremento y Decremento: 
+
+        // let i = 2
+        // i = i + 2;
+        // console.log(i); = 4
+
+        // se puede simplificar de esta manera
+
+        /* let i = 2;
+         i += 2;
+         console.log(i); =4 */
+
+         //aplica con todos los operadores (suma, resta, etc)
+
+    //Operador Unario: se usa para aumentar o disminuir un numero en unidades.
+
+        let i = 2;
+
+        i++;
+        i--;
+        ++i;
+        --i;
+         console.log(i);
+
+    //Logicos: 
+    
+        //Not(!): niega, es decir, que lo que esta verdadero lo vuelve falso y viceversa. 
+    
+        // false
+        console.log(!true);
+
+        // true
+        console.log(!false);
+    
+         //Or(||): cuando tengo dos o mas condiciones, con que uno se cumpla el Or sera verdadero.
+
+         // true
+         console.log((9 === 9) || ('9' === 9));
+
+         //false
+         console.log(('9' === 9) || (9 === '9'));
+    
+    
+    
+    
+         //And(&&): cuando tengo dos o mas condiciones, todas tienen que cumplirse, es decir, ser verdaderas para que And se valide.
+
+        // true
+         console.log((9 === 9) && ('9' === '9'));
+
+         //false
+         console.log((9 === 9) && ('9' === 9));
+        
+        
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
