@@ -47,7 +47,7 @@
         }*/
 
 
-        // for in es un for especial para objetos
+        // for in es un for especial para objetos que itera cada una de las propiedades.
         const jean = {
             nombre : 'Jean',
             apellido: 'Centeno',
@@ -57,6 +57,13 @@
         //para acceder al valor de las propiedades se utiliza la notacion de corchetes
         for (const propiedad in jean){
             console.log(`key: ${propiedad}, value ${jean[propiedad]}`);
+        }
+
+        //for of permite iterar cada uno de los elementos ya sea cadena de texto o arreglo
+        let cadena = 'Hola Mundote'
+
+        for (const caracter of cadena){
+            console.log(caracter);
         }
 
 
