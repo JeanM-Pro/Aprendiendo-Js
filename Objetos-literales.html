@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Objetos literales es una nueva forma de simplificar los objetos convencionales para agilizar la escritura de codigo.
+
+        //Ejemplo de como le asignamos los valores a las propiedades de un objeto tomando como referencia el valor de una variable ya definida.
+
+        let nombre = 'Jean';
+        let apellido = 'Centeno';
+        let edad = 27;
+
+        //Ahora para exportar los valores de estas variables al valor de las propiedades de un objeto se haria de esta manera sin la simplificacion del codigo.
+
+        let persona = {
+            nombre: nombre,
+            apellido: apellido,
+            edad: 29,
+            correr: function(){
+                console.log('corre velozmente');
+            }
+        }
+
+        console.log(persona);
+        persona.correr();
+
+        // Ahora utilizando el metodo de Objetos literales podriamos hacer lo mismo pero con un codigo mas simplificado. tomamos los mismos valores de las variables ya declaradas.
+
+        let jeansito = {
+            nombre,
+            apellido,
+            edad,
+            sexo: 'masculino',
+            corredor(){
+                console.log('corre veloz')
+            }
+        }
+
+        console.log(jeansito);
+        jeansito.corredor();
+
+        //si deseamos agregar una propiedad que no este definida como una variable, la agregamos normalmente.
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
