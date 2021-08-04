@@ -28,7 +28,21 @@
 
         console.log(one, two, three);
 
-        
+        //Destructuracion en Objetos
+
+        const persona = {
+            nombre: 'Jean',
+            apellido: 'Centeno',
+            edad: 29
+        }
+
+        let {nombre, apellido, edad} = persona;
+
+        console.log(nombre, apellido, edad);
+
+        edad = 20;
+
+        console.log(edad);
 
 
 
