@@ -12,11 +12,19 @@
 
     try{
         console.log('En el try se agrega el codigo a evaluar');
+        noExiste;
+        console.log('Segundo mensaje en el try');
     } catch(error){
         console.log('catch, captura cualquier error surgido o lanzado en el try');
+        //para mostrar el error en la consola
+        console.log(error);
     } finally{
         console.log('el bloque finally se ejecutara siempre al final de un bloque try catch')
     };
+
+    //isNaN es una funcion que se usa para comparar valores numericos, si la varible no es un numero, devuelve true, de lo contrario devuelve false.
+
+    
 
 
 
