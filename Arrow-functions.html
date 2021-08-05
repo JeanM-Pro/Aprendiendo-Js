@@ -58,13 +58,11 @@
 
         numeros.forEach((el, index)=>console.log(`${el} esta en la posicion ${index}`));
 
-        // metodo this
+        // metodo this dentro de los objetos literales
 
         const perro = {
             nombre: 'firulai',
-            ladrar()=>{
-                console.log(this)
-;           }
+            ladrar(){console.log(this)}
         }
 
         perro.ladrar();
