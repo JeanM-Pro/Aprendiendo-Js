@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // una funcion expresada es cuando a una variable le asignamos una funcion anonima
+
+        const saludar = function(){
+            console.log('hola gente');
+        }
+        saludar()
+
+        //una funcion declarada es cuando escribimos la funcicon directamente
+
+        function saluda(){
+            console.log('hi people')
+        }
+        saluda();
+
+        //para crear la arrow function quitamos la palabra funcion y la cambiamos por una flecha hcia la derecha entre los parentesis y las llaves
+
+        const salud =()=>{
+            console.log('hola gentesita');
+        }
+        salud()
+
+        //cuando la funcion tiene una sola linea de expresion podemos omitir las llaves dejar una sola linea de codigo en la funcion
+
+        const salu =()=>console.log('hola guapos');
+        salu()
+
+        // cuando una arrow funcion recibe un parametro podemos omitir los parentesis y colocar el parametro directamente.
+
+        const sal = nombre=>console.log(`Hola ${nombre}`);
+        sal(`Jean`);
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
