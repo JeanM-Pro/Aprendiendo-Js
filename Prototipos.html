@@ -24,7 +24,7 @@
 
         //funcion constructora
 
-        function Animal(nombre, genero){
+        /*function Animal(nombre, genero){
             //Atributos
             this.nombre = nombre;
             this.genero = genero;
@@ -39,7 +39,29 @@
             perrita = new Animal('sofie', 'hembra');
 
             console.log(snoopy);
+            console.log(perrita);*/
+
+            //Funcoin constructora donde asignamos los metodos al prototipo, no a la funcion como tal.
+
+            function Animal(nombre, genero){
+            //Atributos
+            this.nombre = nombre;
+            this.genero = genero;
+
+        }
+
+            //Metodos agregados al prototipo de la funcion constructora.
+            Animal.prototype.sonar = function(){
+                console.log(`hago sonidos porque estoy vivo`)
+            }
+
+
+        const snoopy = new Animal('roky', 'macho'),
+            perrita = new Animal('sofie', 'hembra');
+
+            console.log(snoopy);
             console.log(perrita);
+
 
 
         
