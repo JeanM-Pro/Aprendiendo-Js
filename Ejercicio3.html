@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const separar = function(str, separador){
+            if (!str){
+                console.warn('debe ingresar el texto');
+            } else {
+                console.info(str.split(separador));
+            }
+        };
+
+        separar();
+        separar('hola como estas, mi nombre es jean', ',')
+
+
+
+
+    </script>
+</body>
+</html>
