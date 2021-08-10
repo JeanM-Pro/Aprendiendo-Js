@@ -8,13 +8,16 @@
 </head>
 <body>
     <script>
-         let recortarTexto = function(str, numero){
-             let cadena = str.substring();
-             console.log(cadena);
-         }
+         let cadena = function(str, numero){
+             if(!str){
+                 console.warn('no ingresaste ningun valor');
+             } else {
+                 console.log(str.substring(0, numero));
+             }
+            };
 
-         recortarTexto(`hola como estamos todos`);
-
+            cadena();
+            cadena('perreo', 5)
 
     </script>
 </body>
