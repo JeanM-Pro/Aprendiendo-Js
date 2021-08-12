@@ -8,30 +8,12 @@
 </head>
 <body>
     <script>
-        const volteador = function(cadena){
-            let nuevaC = cadena.length;
-            let cadenaI = "";
+        //Programa una función que invierta las palabras de una cadena de texto, pe. miFuncion("Hola Mundo") devolverá "odnuM aloH".
 
+        const volteador = (cadena) => (!cadena) ? console.warn("no ingresaste ningun texto") : console.info(cadena.split("").reverse().join(""))
 
-            while (nuevaC >= 0){
-                cadenaI = cadenaI + cadena.charAt(nuevaC);
-                nuevaC--;
-            }
+        volteador("mamada")
 
-            console.log(cadenaI);
-        }
-      
-        volteador('socopote')
-
-
-
-        let prueba = 'hola gente';
-        let nprueba = prueba.length;
-        let ejecutar = prueba.charAt(nprueba)
-
-
-
-        console.log(ejecutar)
 
 
 
