@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Programa una función que obtenga un numero aleatorio entre 501 y 600.
+        const generador = (min, max)=>{
+            (!min)?console.warn('debe incluir el numero minimo'):
+            (!max)?console.warn('debe incluir el numero maximo'):
+            console.info(Math.round(Math.random()*(max - min))+min);
+
+            
+        };
+
+        generador(501, 601)
+
+
+    </script>
+</body>
+</html>
