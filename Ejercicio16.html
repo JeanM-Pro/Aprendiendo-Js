@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Programa una función que devuelva el monto final después de aplicar un descuento a una cantidad dada, pe. miFuncion(1000, 20) devolverá 800.
+
+        const descuentador = (cantidad=undefined, descuento=undefined)=>{
+            if (cantidad === undefined) return console.warn(`Debe ingresar la cantidad a la que se le aplicara el descuento`);
+
+            if (typeof cantidad !== "number") return console.error(`El valor "${cantidad}" NO es de tipo numérico`);
+
+            if (descuento === undefined) return console.warn(`Debe ingresar el porcentaje a descontar`);
+
+            if (typeof descuento !== 'number') return console.error(`El valor "${descuento}" NO es de tipo numérico`);
+
+            let reglade3 = (descuento*cantidad)/100,
+             resultado = cantidad - reglade3;
+
+            return console.info(`el monto final son ${resultado}`);
+        }
+
+        descuentador(2500, 15);
+
+        
+
+
+
+    </script>
+</body>
+</html>
