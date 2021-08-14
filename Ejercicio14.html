@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Programa una función para convertir grados Celsius a Fahrenheit y viceversa, pe. miFuncion(0,"C") devolverá 32°F.
+
+        const convertidor = (grados=undefined, unidad=undefined)=>{
+            if (grados===undefined) return console.warn(`No ingreso ningun dato, debe ingresar un dato de tipo numérico y cadena de texto`);
+
+            if (typeof grados !== "number") return console.warn(`Solo se admiten datos de tipo numérico`);
+
+            if (!unidad) return console.warn(`no ingreso ningun dato en unidad, debe ingresar un dato de tipo cadena de texto con "C" o "F" como valor dependiendo del resultado que espera obtener`);
+
+            if (typeof unidad !== "string") return console.warn(`Solo se admiten valores de tipo cadena de texto`)
+
+            if (unidad !== "C" && unidad !== "F") return console.warn(`Unidad no reconocida, debe ingresar "C" o "F" en mayúsculas como valor.`);
+
+            if (unidad === "C") return console.info(`${grados}º Celcius equivalen a ${Math.round((grados*9/5)+32)}º Fahrenheit`);
+
+            if (unidad === "F") return console.info(`${grados}º Fahrenheit equivalen a ${Math.round((grados-32)*5/9)}º Celcius`);
+
+
+        }
+         
+        convertidor(5, "C");
+        convertidor(0, "F");
+
+    </script>
+</body>
+</html>
