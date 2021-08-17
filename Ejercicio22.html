@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Programa una función que dado un array devuelva el número mas alto y el más bajo de dicho array, pe. miFuncion([1, 4, 5, 99, -60]) devolverá [99, -60].
+
+        const arrayMinMax = (arr)=>{
+
+        if (arr === undefined) return console.warn(`debe ingresar un arreglo de números`);
+
+            if (!(arr instanceof Array)) return console.error(`el valor que ingresaste no es un arreglo.`);
+
+            if (arr.length === 0) return console.warn(`el arreglo esta vacío`);
+
+            for (let numer of arr){
+                if (typeof numer !== 'number') return console.warn(`el valor "${numer}" NO es un número.`)
+            }
+
+            return console.info(`Arreglo original: ${arr}\nValor Mayor: ${Math.max(...arr)}\nValor menor: ${Math.min(...arr)}`);
+        }
+
+        arrayMinMax();
+        arrayMinMax(true);
+        arrayMinMax([]);
+        arrayMinMax([2, 5, 9, 8, 'cuatro']);
+        arrayMinMax([2, 8, 56, 9]);
+
+    </script>
+</body>
+</html>
