@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Programa una función que valide que un texto sea un email válido, pe. miFuncion("jonmircha@gmail.com") devolverá verdadero.
+
+        const validarEmail = (email)=>{
+            if (!email) return console.warn('Debe ingresar su correo electrónico.');
+
+            if (typeof email !== 'string') return console.warn(`El tipo de dato "${email}" NO es corrrecto.`);
+
+            email = email.toLowerCase();
+
+            let expReg = /[a-z0-9]+(\.[a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})/i.test(email);
+
+            return (expReg) 
+            ? console.info(`"${email}" es un correo válido.`) : 
+            console.info(`"${email}" NO es un correo válido.`)
+        }
+
+        validarEmail('jeanpepe@gmail.com')
+    </script>
+</body>
+</html>
