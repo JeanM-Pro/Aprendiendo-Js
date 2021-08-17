@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Programa una función que valide que un texto sea un nombre válido, pe. miFuncion("Jonathan MirCha") devolverá verdadero.
+
+        const validarNombre = (nombre)=>{
+            if (!nombre) return console.warn('Debe ingresar una cadena de texto.');
+
+            if (typeof nombre !== 'string') return console.warn(`El tipo de dato "${nombre}" NO es una cadena de texto.`);
+
+            nombre = nombre.toUpperCase();
+
+            let expReg = /^[A-ZÁÉÍÓÚÑ\s]+$/g.test(nombre);
+
+            return (expReg) 
+            ? console.info(`"${nombre}" es un nombre válido.`) : 
+            console.info(`"${nombre}" NO es un nombre válido.`)
+        }
+
+        validarNombre('jean Marcos')
+
+
+
+
+
+
+    </script>
+</body>
+</html>
