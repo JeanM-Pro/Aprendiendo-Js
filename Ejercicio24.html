@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //24) Programa una función que dado un arreglo de números devuelva un objeto con dos arreglos, el primero tendrá los numeros ordenados en forma ascendente y el segundo de forma descendiente, pe. miFuncion([7, 5,7,8,6]) devolverá { asc: [5,6,7,7,8], desc: [8,7,7,6,5] }.
+
+        const ordenarNumeros = (arr)=>{
+            if (arr === undefined) return console.warn(`debe ingresar un arreglo de números`);
+
+            if (!(arr instanceof Array)) return console.error(`el valor que ingresaste no es un arreglo.`);
+
+            if (arr.length === 0) return console.warn(`el arreglo esta vacío`);
+
+            for (let numer of arr){
+                if (typeof numer !== 'number') return console.warn(`el valor "${numer}" NO es un número.`)
+            }
+
+            return console.info({
+                arr,
+                asc: arr.map(el => el).sort((a, b) => a - b),
+                desc: arr.map(el => el).sort((a, b) => b - a)
+            });
+
+        }
+
+        ordenarNumeros();
+        ordenarNumeros(23);
+        ordenarNumeros('23');
+        ordenarNumeros([]);
+        ordenarNumeros([2,8,6,8,9,4,'8']);
+        ordenarNumeros([1, 12, 24, 16, 85, 7, 19, 38]);
+
+    </script>
+</body>
+</html>
